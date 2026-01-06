@@ -1,3 +1,7 @@
+# 给网卡 enP8p1s0 设置静态 IP
+sudo ifconfig enP8p1s0 192.168.10.100 netmask 255.255.255.0 up
+
+
 import sys
 import gi
 import time
