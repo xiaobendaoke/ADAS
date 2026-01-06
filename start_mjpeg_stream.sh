@@ -1,5 +1,6 @@
 #!/bin/sh
-
+# 给网卡 eth0 设置静态 IP
+sudo ifconfig eth0 192.168.10.101 netmask 255.255.255.0 up
 # 1. 定义开关桌面的函数 (完全照搬您的脚本)
 start_ui() { systemctl start systemui 2>/dev/null; }
 stop_ui()  { systemctl stop  systemui 2>/dev/null; }
